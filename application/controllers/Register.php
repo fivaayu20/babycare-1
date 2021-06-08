@@ -118,8 +118,8 @@
 				  'protocol' 		=> 'smtp',
 				  'smtp_ssl' 		=> 'auto',
 				  'smtp_host' 		=> 'smtp.googlemail.com',
-				  'smtp_user' 		=> 'ensiserver2021@gmail.com',
-				  'smtp_pass' 		=> 'literasi2021',
+				  'smtp_user' 		=> 'carebaby785@gmail.com',
+				  'smtp_pass' 		=> 'babycare123',
 				  'smtp_port' 		=> 465,
 				  'smtp_crypto' 	=> 'ssl',
 				  'mailtype' 		=> 'html',
@@ -131,9 +131,9 @@
 				$this->load->library('email', $config);
 				$this->email->initialize($config);
 				$this->email->set_newline("\r\n");
-				$this->email->from('ensiserver2021@gmail.com', 'Literasi 2021');
+				$this->email->from('carebaby785@gmail.com', 'Baby Care 2021');
 				$this->email->to($this->input->post('email'));
-				$this->email->cc('ensiserver2021@gmail.com');
+				$this->email->cc('carebaby785@gmail.com');
 				$this->email->subject($resultText);
 				$this->email->message($message);
 				
@@ -178,8 +178,8 @@
 					'protocol' => 'smtp',
 					'smtp_ssl' => 'auto',
 					'smtp_host' => 'smtp.googlemail.com',
-					'smtp_user' => 'ensiserver2021@gmail.com',
-					'smtp_pass' => 'literasi2021',
+					'smtp_user' => 'carebaby785@gmail.com',
+					'smtp_pass' => 'babycare123',
 					'smtp_port' => 465,
 					'smtp_crypto' => 'ssl',
 					'mailtype' => 'html',
@@ -191,9 +191,9 @@
 				  $this->load->library('email', $config);
 				  $this->email->initialize($config);
 				  $this->email->set_newline("\r\n");
-				  $this->email->from('ensiserver2021@gmail.com', 'Literasi 2021');
+				  $this->email->from('carebaby785@gmail.com', 'Baby Care 2021');
 				  $this->email->to($pengasuhData->email);
-				  $this->email->cc('ensiserver2021@gmail.com');
+				  $this->email->cc('carebaby785@gmail.com');
 				  $this->email->subject($resultText);
 				  $this->email->message($message);
 				  $this->email->send();

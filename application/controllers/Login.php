@@ -136,12 +136,12 @@
 				  'smtp_timeout' => '4',
 				  'charset' => 'iso-8859-1',
 				  'wordwrap' => TRUE
-				];
+			  ];
 				
 				$this->load->library('email', $config);
 				$this->email->initialize($config);
 				$this->email->set_newline("\r\n");
-				$this->email->from('ensiserver2021@gmail.com', 'Literasi 2021');
+				$this->email->from('ensiserver2021@gmail.com', 'Baby Care 2021');
 				$this->email->to($this->input->post('email'));
 				$this->email->cc('ensiserver2021@gmail.com');
 				$this->email->subject($resultText);
@@ -201,7 +201,7 @@
 			  $this->load->library('email', $config);
 			  $this->email->initialize($config);
 			  $this->email->set_newline("\r\n");
-			  $this->email->from('ensiserver2021@gmail.com', 'Literasi 2021');
+			  $this->email->from('ensiserver2021@gmail.com', 'Baby Care 2021');
 			  $this->email->to($kantorData->email);
 			  $this->email->cc('ensiserver2021@gmail.com');
 			  $this->email->subject($resultText);
